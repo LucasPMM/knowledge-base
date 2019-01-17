@@ -1,12 +1,12 @@
 import { ActionReducerMap, createSelector } from '@ngrx/store';
 
-export interface AppState {
+export interface ProjectState {
 }
 
-export const reducers: ActionReducerMap<AppState> = {
+export const reducers: ActionReducerMap<ProjectState> = {
 
 };
 
 
-export const mapApplicationState = (state: AppState) => state;
+export const mapApplicationState = (state: ProjectState) => state;
 export const getApplicationState = createSelector(mapApplicationState);

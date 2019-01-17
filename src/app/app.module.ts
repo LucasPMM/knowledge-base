@@ -8,11 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 
-// Components
-import { HomepageComponent } from './pages/homepage/homepage.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { KnowledgeComponent } from './pages/knowledge/knowledge.component';
-
 // Libraries
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -27,6 +22,10 @@ import { localStorageSync } from 'ngrx-store-localstorage';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { HomePageModule } from './pages/homepage/homepage.module';
+import { KnowledgeModule } from './pages/knowledge/knowledge.module';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { PageNotFoundModule } from './pages/page-not-found/page-not-found.module';
 registerLocaleData(localePt);
 
 export function createTranslateLoader(http: HttpClient) {
@@ -48,11 +47,11 @@ const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    NavbarComponent,
-    KnowledgeComponent
+    PageNotFoundComponent,
   ],
   imports: [
+    HomePageModule,
+    KnowledgeModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
