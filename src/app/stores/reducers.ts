@@ -8,5 +8,5 @@ export const reducers: ActionReducerMap<ProjectState> = {
 };
 
 
-export const mapApplicationState = (state: ProjectState) => state;
-export const getApplicationState = createSelector(mapApplicationState);
+// export const mapApplicationState = (state: ProjectState) => state;
+// export const getApplicationState = createSelector(mapApplicationState);

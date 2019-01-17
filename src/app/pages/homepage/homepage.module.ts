@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
 import { HomepageComponent } from './homepage.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     TranslateModule.forChild(),
+    ComponentsModule,
   ],
   declarations: [HomepageComponent]
 })
