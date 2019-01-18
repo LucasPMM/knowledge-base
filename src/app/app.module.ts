@@ -25,7 +25,7 @@ import { registerLocaleData } from '@angular/common';
 import { HomePageModule } from './pages/homepage/homepage.module';
 import { KnowledgeModule } from './pages/knowledge/knowledge.module';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { PageNotFoundModule } from './pages/page-not-found/page-not-found.module';
+
 registerLocaleData(localePt);
 
 export function createTranslateLoader(http: HttpClient) {
@@ -68,7 +68,6 @@ const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
       maxAge: 25,
       logOnly: environment.production,
     }),
-
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
