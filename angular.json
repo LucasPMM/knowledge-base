@@ -29,11 +29,13 @@
             "styles": [
               "src/styles.scss",
               "node_modules/font-awesome/css/font-awesome.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/prism/prism.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",  
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/prism/prism.js"
             ]
           },
           "configurations": {
@@ -90,11 +92,13 @@
             "styles": [
               "src/styles.scss",
               "node_modules/font-awesome/css/font-awesome.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/prism/prism.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/prism/prism.js"
             ],
             "assets": [
               "src/favicon.ico",
