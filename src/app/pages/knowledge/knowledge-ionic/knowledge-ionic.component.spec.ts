@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KnowledgeComponent } from './knowledge.component';
+import { KnowledgeIonicComponent } from './knowledge-ionic.component';
 
-describe('KnowledgeComponent', () => {
-  let component: KnowledgeComponent;
-  let fixture: ComponentFixture<KnowledgeComponent>;
+describe('KnowledgeIonicComponent', () => {
+  let component: KnowledgeIonicComponent;
+  let fixture: ComponentFixture<KnowledgeIonicComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KnowledgeComponent ]
+      declarations: [ KnowledgeIonicComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KnowledgeComponent);
+    fixture = TestBed.createComponent(KnowledgeIonicComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

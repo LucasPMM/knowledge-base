@@ -4,14 +4,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { TranslateModule } from '@ngx-translate/core';
-import { KnowledgeComponent } from './knowledge.component';
 import { KnowledgeAngularComponent } from './knowledge-angular/knowledge-angular.component';
+import { ComponentsModule } from 'src/app/components/components.module';
+import { KnowledgeIonicComponent } from './knowledge-ionic/knowledge-ionic.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: KnowledgeComponent
-  }
+    path: 'angular',
+    component: KnowledgeAngularComponent
+  },
+  {
+    path: 'ionic',
+    component: KnowledgeIonicComponent
+  },
 ];
 
 @NgModule({
@@ -21,7 +26,13 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     TranslateModule.forChild(),
+    ComponentsModule
   ],
-  declarations: [KnowledgeComponent, KnowledgeAngularComponent]
+  declarations: [
+    KnowledgeAngularComponent,
+    KnowledgeIonicComponent
+  ],
+  exports: [
+  ]
 })
 export class KnowledgeModule {}

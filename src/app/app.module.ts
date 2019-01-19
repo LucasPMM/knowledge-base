@@ -25,6 +25,8 @@ import { registerLocaleData } from '@angular/common';
 import { HomePageModule } from './pages/homepage/homepage.module';
 import { KnowledgeModule } from './pages/knowledge/knowledge.module';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { HighlightService } from './services/highlight/highlight.service';
+import { ComponentsModule } from './components/components.module';
 
 registerLocaleData(localePt);
 
@@ -53,6 +55,7 @@ const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
     HomePageModule,
     KnowledgeModule,
     BrowserModule,
+    ComponentsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -71,6 +74,7 @@ const metaReducers: Array<MetaReducer<any, any>> = [localStorageSyncReducer];
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
+    HighlightService
   ],
   bootstrap: [AppComponent]
 })
